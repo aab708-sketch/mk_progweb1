@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Aab Abdullah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: lightseagreen; /* Efek perubahan warna saat disorot (Pseudo-class selector) */
+        }
+
+        /* Styling Bagian Konten Utama (Main) menggunakan Flexbox sesuai contoh di PDF */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Styling setiap bagian/Section */
+        section {
+            background-color: #ffffff; /* Latar belakang bagian putih (Card style) */
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+            border-radius: 8px; /* Membulatkan sudut kotak */
+        }
+
+        h1, h2, h3 {
+            color: #333; /* Warna judul gelap */
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+        /* Mengatur gambar/foto */
+        img {
+            border-radius: 50%; /* Membuat foto menjadi bulat */
+            margin: 20px auto;
+            display: block;
+        }
+
+        /* Mengatur Tabel Portofolio (Sesuai Materi Form & Tabel) */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Menghilangkan jarak antar garis batas tabel */
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333; /* Warna header tabel */
+            color: white;
+        }
+
+        /* Styling Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+            margin-top: 20px;
+        }
+        
+        .highlight {
+            color: lightseagreen;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Header (Identitas & Navigasi) -->
+    <header>
+        <h1>Portofolio Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#proyek">Proyek Web & Jaringan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        
+        <!-- Section Profil/Hero -->
+        <section id="profil">
+            <!-- Tempat memasukkan gambar profil (sesuaikan src dengan foto sendiri) -->
+            <img src="D:\SISE006\Semester 5\7. Pemrograman Web 1\Pertemuan 2\saya.jpeg" alt="Foto Profil Aab" width="150" height="150">
+            
+            <h2>Halo, Saya <span class="highlight">Aab Abdullah</span></h2>
+            <p>Saya adalah seorang <b>Mahasiswa Semester 5</b> Program Studi Sistem Informasi di Universitas Pamulang (UNPAM) PSDKU Serang.</p>
+            <p>Saya sangat bersemangat dalam dunia teknologi. Saat ini, saya fokus berkembang menjadi seorang <b>Web Developer</b> sekaligus memperdalam kemampuan di bidang infrastruktur jaringan.</p>
+            <p><i>"Semangatlah!!! Dalam menuntut ilmu, mengatur waktu dan keuangan, jangan pernah menyerah. Jika lelah, istirahatlah sejenak."</i></p>
+        </section>
+
+        <!-- Section Daftar Proyek (Menggunakan Struktur Tabel sesuai materi Pertemuan 8) -->
+        <section id="proyek">
+            <h2>Daftar Proyek & Keahlian</h2>
+            <p>Berikut adalah beberapa proyek pengembangan web dan jaringan yang pernah saya kerjakan dan pelajari:</p>
+            
+            <!-- Tabel Proyek -->
+            <table>
+                <tr>
+                    <th>Nama Proyek / Aktivitas</th>
+                    <th>Fokus Teknologi</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Dasar-Dasar HTML & CSS</td>
+                    <td>HTML5, CSS, Flexbox</td>
+                    <td>Selesai (Pertemuan 1-8)</td>
+                </tr>
+                <tr>
+                    <td>Manajemen Database (Rencana)</td>
+                    <td>MySQL / PHP</td>
+                    <td>Sedang Berjalan</td>
+                </tr>
+                <tr>
+                    <td>Infrastruktur Jaringan</td>
+                    <td>MikroTik & Jaringan Lokal</td>
+                    <td>Aktif & Eksplorasi</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="kontak">
+            <h2>Kontak & Layanan</h2>
+            <p>Selain belajar, saya juga mengelola layanan perbaikan perangkat keras dan jaringan. Jangan ragu untuk menghubungi saya untuk kolaborasi atau pengembangan web Anda selanjutnya.</p>
+        </section>
+
+    </main>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <p>&copy; 2026 Aab Abdullah - Web Developer & Mahasiswa UNPAM</p>
+    </footer>
+
+</body>
+</html>
